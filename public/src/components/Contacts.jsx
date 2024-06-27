@@ -48,7 +48,6 @@ export default function Contacts({ contacts, changeChat }) {
             }`}
             onClick={() => changeCurrentChat(index, contact)}
           >
-            <div className="avatar"></div>
             <div className="username">
               <h3 className="text-white">{contact.username}</h3>
             </div>
@@ -56,9 +55,6 @@ export default function Contacts({ contacts, changeChat }) {
         ))}
       </div>
       <div className="current-user flex justify-center items-center gap-8 border-t border-gray pt-2">
-        <div className="avatar">
-          {/* Add the avatar image if available */}
-        </div>
         <div className="username">
           <h2 className="text-white">{currentUserName}</h2>
         </div>

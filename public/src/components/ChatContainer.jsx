@@ -81,7 +81,6 @@ export default function ChatContainer({ currentChat, socket }) {
         <div className="grid grid-rows-[10%_80%_10%] gap-1 overflow-hidden md:grid-rows-[15%_70%_15%]">
           <div className="flex justify-between items-center px-8">
             <div className="flex items-center gap-4">
-              <div className="avatar"></div>
               <div className="username">
                 <h2 className="text-white">{currentChat.username}</h2>
               </div>

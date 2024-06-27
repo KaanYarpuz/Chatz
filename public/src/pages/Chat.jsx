@@ -38,13 +38,9 @@ export default function Chat() {
   useEffect(() => {
     const fetchContacts = async () => {
       if (currentUser) {
-        if (currentUser.isAvatarImageSet) {
           const data = await axios.get(`${allUsersRoute}/${currentUser._id}`);
           setContacts(data.data);
-        } else {
-          navigate("/setAvatar");
-        }
-      }
+      } 
     };
     fetchContacts();
   }, [currentUser, navigate]);
